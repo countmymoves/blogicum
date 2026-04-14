@@ -4,7 +4,7 @@
   <div>
     <p>{{ post.date }}</p>
     <p>{{ post.location }}</p>
-    <p>{{ post.text|truncatechars:50 }}</p>
+    <p>{{ post.text }}</p>
     <a href="{% url 'blog:post_detail' post.id %}">Читать полностью</a>
   </div>
 {% endfor %}
