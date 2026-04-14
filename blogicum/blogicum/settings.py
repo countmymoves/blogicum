@@ -8,7 +8,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -21,7 +20,6 @@ INSTALLED_APPS = [
     'pages',
 ]
 
-
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -31,14 +29,12 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
 ]
 
-
 ROOT_URLCONF = 'blogicum.urls'
-
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'],  # папка templates на уровне проекта
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -51,9 +47,7 @@ TEMPLATES = [
     },
 ]
 
-
 WSGI_APPLICATION = 'blogicum.wsgi.application'
-
 
 DATABASES = {
     'default': {
@@ -62,20 +56,13 @@ DATABASES = {
     }
 }
 
-
 LANGUAGE_CODE = 'ru-ru'
-
 TIME_ZONE = 'UTC'
 
-USE_I18N = True
-USE_TZ = True
-
-
 STATIC_URL = 'static/'
-
-
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATICFILES_DIRS = [
     BASE_DIR / 'static',
 ]
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
